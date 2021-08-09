@@ -3,8 +3,10 @@
 
 // readFileSync -> nome do arquivo (stdin) 
 let input = require('fs').readFileSync('stdin', 'utf8');
+var lines = input.split('\n');
 
-var [A, B, C] = input.split(' ').map(item => Number(item));
-var maiorAB = (A + B + abs(a - b)) / 2;
+var raio = lines.shift();
+var pi = 3.14159;
+var volume = (4 / 3) * pi * raio ** 3
 
-console.log(maiorAB + ' eh o maior');
+console.log('VOLUME = ' + volume.toFixed(3));
