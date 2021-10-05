@@ -18,10 +18,11 @@ const alimentos = [
   'Espinafre',
 ];
 const alimentosOrdenados = alimentos.sort()
-const alimentosUnicos = new Set();
+const alimentosUnicos = new Set(); // armazenando valores únicos de qualquer tipo
 
 alimentosOrdenados.forEach((alimento) => {
   alimentosUnicos.add(alimento);
 })
 
-console.log([...alimentosUnicos.values()]);
+console.log([...alimentosUnicos.values()]); // values() -> convertendo para um array
+// spreadOperator '...'
